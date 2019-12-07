@@ -30,11 +30,19 @@
 	
     function preload() {
 	   this.load.image('ball', 'img/ball.png');
+	   this.load.image('m', 'img/M.png');
+	   this.load.image('o', 'img/O.png');
+	   this.load.image('sh', 'img/SH.png');
+	   this.load.image('u', 'img/U.png');
 	}
 	
     function create() {
+		this.add.image(50, 50, 'm');
+		this.add.image(120, 50, 'o');
+		//this.add.image(190, 50, 'sh');
+		//this.add.image(260, 50, 'u');
   
-	   var logo = this.physics.add.image(50, 50, 'ball');
+	    var logo = this.physics.add.image(150, 150, 'ball');
 
         logo.setVelocity(100, 200);
         logo.setBounce(1, 1);
